@@ -1,4 +1,4 @@
-# 🌟 Praktikum Dasar Pemrograman
+# Praktikum Dasar Pemrograman
 
 Repository ini berisi kumpulan tugas dan latihan dari mata kuliah **Praktikum Dasar Pemrograman**.  
 Setiap folder mewakili satu _Jobsheet_ yang diberikan selama perkuliahan.
@@ -17,7 +17,7 @@ Setiap folder mewakili satu _Jobsheet_ yang diberikan selama perkuliahan.
 
 ---
 
-## 📚 Daftar Jobsheet
+## Daftar Jobsheet
 
 | No  | Jobsheet   | Topik                              | Keterangan                             |
 | --- | ---------- | ---------------------------------- | -------------------------------------- |
