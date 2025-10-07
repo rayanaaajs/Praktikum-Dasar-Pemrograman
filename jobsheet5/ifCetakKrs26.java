@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ifCetakKrs26 {
   public static void main(String[] args) {
     
-  } {
+   {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("---Cetak KRS---");
@@ -12,12 +12,14 @@ public class ifCetakKrs26 {
 
     if (uktLunas) {
       System.out.println("pembayaran ukt terverifikasi");
-    } else {
       System.out.println("silahkan cetak krs dan minta tanda tangan dpa");
-
-      
+    } else {
+       System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu.");
     }
+
+  
     sc.close();
     
   }   
+}
 }

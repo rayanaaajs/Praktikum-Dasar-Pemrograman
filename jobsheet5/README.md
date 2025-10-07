@@ -8,7 +8,7 @@
 
 **Jawaban**
 
-1.  
-2.  
-3.  
-4.  
+1. Karena variabel yang dicek sudah bertipe boolean (true/false)
+2. hasil outputnya kosong/tidak menampilkan apapun
+3. sudah saya tambahkan else statement dan ketika user memilih false maka akan muncul tulisan yang berbeda dengan true
+4. sudah saya commit dan push ke github
