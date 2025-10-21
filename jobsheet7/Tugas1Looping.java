@@ -35,7 +35,7 @@ public class Tugas1Looping {
         }
 
         System.out.println("\n=== Rekap Penjualan Hari Ini ===");
-        System.out.println("Total tiket terjual: " + totalTiketTerjual);
+        System.out.println("Total tiket yang terjual: " + totalTiketTerjual);
         System.out.println("Total penjualan: Rp " + totalPenjualan);
 
         sc.close();
