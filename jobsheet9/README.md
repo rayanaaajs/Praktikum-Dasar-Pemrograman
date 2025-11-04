@@ -46,6 +46,8 @@
 2. Modifikasi program pada praktikum percobaan 3 di atas (ArrayRataNilaiXX.java) sehingga program menerima jumlah elemen berdasarkan input dari pengguna dan mengeluarkan output seperti berikut ini:
 
 **Jawaban**
+1. sudah saya modif
+2. sudah dengan memanggil variable yang menerima input jumlah mahasiswa dari user dan memanggil nama variabel ke dalam array
 
 ### 2.4 Percobaan 4: Searching
 
@@ -56,3 +58,6 @@
 3. Modifikasi program pada percobaan 4 di atas, sehingga program akan memberikan pesan "Nilai yang dicari tidak ditemukan" jika nilai yang dicari (key) tidak ada di dalam array. Contoh tampilan program sebagai berikut:
 
 **Jawaban**
+
+1. statement break berfungsi menghentikan proses perulangan setelah nilai yang dicari ditemukan dalam array
+2. sudah dan saya commit dengan nama modifikasi search nilai
