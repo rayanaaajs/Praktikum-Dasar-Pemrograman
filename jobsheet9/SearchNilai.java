@@ -26,9 +26,11 @@ public class SearchNilai {
         }
 
 
-        System.out.println();
-        System.out.println("Nilai "+key+" ketemu di indeks ke-"+hasil);
-        System.out.println();
+    if (hasil != 0) {
+        System.out.println("nilai " + key + " ketemu ,merupakan nilai mahasiswa ke-" + hasil);
+    } else {
+        System.out.println("nilai yang dicari tidak ditemukan");
+    }
 
         sc.close();
     }
