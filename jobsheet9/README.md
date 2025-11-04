@@ -9,7 +9,8 @@
 
 1. Jika isi masing-masing elemen array bil diubah dengan angka 5.0, 12867, 7.5, 2000000. Apa yang terjadi? Mengapa bisa demikian?
 2. Modifikasi kode program di atas dengan melakukan inisialisasi elemen array sekaligus pada saat deklarasi array.
-3. Ubah statement pada langkah No 4 menjadi seperti berikut: ```for (int i=0; i<4; i++) { System.out.println(bil[i]);}```
+3. Ubah statement pada langkah No 4 menjadi seperti berikut: `for (int i=0; i<4; i++)`
+   `{ System.out.println(bil[i]);}`
    Apa keluaran dari program? Jelaskan maksud dari statement tersebut.
 4. Jika kondisi pada statement for-loop di atas diubah menjadi: i <= 4, apa keluaran dari program? Mengapa demikian?
 
@@ -17,7 +18,6 @@
 
 1. program akan error atau tidak bisa dijalankan, karena ada angka yang tidak sesuai dengan variable array tersebut menggunakan int sedangkan angka yang saya ubah bertipe float/double
 2. sudah hasilnya seperti ini : `int bil [] = {5, 13, -7, 17};`
-
 
 ### 2.2 Percobaan 2: Studi Kasus Nilai Mahasiswa di SIAKAD - Meminta Inputan
 
@@ -42,6 +42,7 @@
 ### 2.3 Percobaan 3: Studi Kasus Nilai Mahasiswa di SIAKAD - Melakukan Operasi Aritmatika terhadap Elemen Array
 
 **Pertanyaan**
+
 1. Modifikasi kode program pada praktikum percobaan 3 di atas (ArrayRataNilaiXX.java) agar program dapat menampilkan banyaknya mahasiswa yang lulus, yaitu mahasiswa yang memiliki lebih besar dari 70 (> 70).
 2. Modifikasi program pada praktikum percobaan 3 di atas (ArrayRataNilaiXX.java) sehingga program menerima jumlah elemen berdasarkan input dari pengguna dan mengeluarkan output seperti berikut ini:
 
@@ -50,6 +51,7 @@
 ### 2.4 Percobaan 4: Searching
 
 **Pertanyaan**
+
 1. Jelaskan maksud dari statement break; pada baris ke-10 kode program percobaan 4 di atas.
 2. Modifikasi kode program pada percobaan 4 di atas sehingga program dapat menerima input berupa banyaknya elemen array nilai, isi array, dan sebuah nilai (key) yang ingin dicari. Lalu cetak ke layar indeks posisi elemen dari nilai (key) yang dicari. Contoh hasil program:
 3. Modifikasi program pada percobaan 4 di atas, sehingga program akan memberikan pesan "Nilai yang dicari tidak ditemukan" jika nilai yang dicari (key) tidak ada di dalam array. Contoh tampilan program sebagai berikut:
