@@ -9,8 +9,7 @@
 
 1. Jika isi masing-masing elemen array bil diubah dengan angka 5.0, 12867, 7.5, 2000000. Apa yang terjadi? Mengapa bisa demikian?
 2. Modifikasi kode program di atas dengan melakukan inisialisasi elemen array sekaligus pada saat deklarasi array.
-3. Ubah statement pada langkah No 4 menjadi seperti berikut: `for (int i=0; i<4; i++)`
-   `{ System.out.println(bil[i]);}`
+3. Ubah statement pada langkah No 4 menjadi seperti berikut: `for (int i=0; i<4; i++) { System.out.println(bil[i]);}`
    Apa keluaran dari program? Jelaskan maksud dari statement tersebut.
 4. Jika kondisi pada statement for-loop di atas diubah menjadi: i <= 4, apa keluaran dari program? Mengapa demikian?
 
@@ -18,22 +17,16 @@
 
 1. program akan error atau tidak bisa dijalankan, karena ada angka yang tidak sesuai dengan variable array tersebut menggunakan int sedangkan angka yang saya ubah bertipe float/double
 2. sudah hasilnya seperti ini : `int bil [] = {5, 13, -7, 17};`
+3. 
 
 ### 2.2 Percobaan 2: Studi Kasus Nilai Mahasiswa di SIAKAD - Meminta Inputan
 
 **Pertanyaan**
 
-1. Ubah statement pada langkah nomor 5 menjadi seperti berikut ini: ```for (int i=0; i < nilaiAkhir.length; i++) {
-   System.out.print("Masukkan nilai akhir ke-"+i+" : ");
-   nilaiAkhir[i] = sc.nextInt();
-   }
+1. Ubah statement pada langkah nomor 5 menjadi seperti berikut ini: ```for (int i=0; i < nilaiAkhir.length; i++) { System.out.print("Masukkan nilai akhir ke-"+i+" : "); nilaiAkhir[i] = sc.nextInt();}`
    Jalankan program. Apakah terjadi perubahan? Mengapa demikian?
-2. Apa yang dimaksud dengan kondisi: i < nilaiAkhir.length?
-3. Ubah statement pada langkah nomor 6 menjadi seperti berikut ini, sehingga program hanya menampilkan nilai Mahasiswa yang lulus saja (yaitu mahasiswa yang memiliki nilai > 70): ```for (int i=0; i < nilaiAkhir.length; i++) {
-   if (nilaiAkhir[i] > 70) {
-   System.out.println("Mahasiswa ke-"+i+" lulus!");
-   }
-   }
+2. Apa yang dimaksud dengan kondisi: `i < nilaiAkhir.length?`
+3. Ubah statement pada langkah nomor 6 menjadi seperti berikut ini, sehingga program hanya menampilkan nilai Mahasiswa yang lulus saja (yaitu mahasiswa yang memiliki nilai > 70): `for (int i=0; i < nilaiAkhir.length; i++){if (nilaiAkhir[i] > 70) {System.outprintln("Mahasiswa ke-"+i+" lulus!");}}`
    Jalankan program dan jelaskan alur program!
 4. Modifikasi program agar menampilkan status kelulusan semua mahasiswa berdasarkan nilai, yaitu dengan menampilkan status mana mahasiswa yang lulus dan tidak lulus, seperti ilustrasi output berikut:
 
