@@ -7,13 +7,19 @@ public class ArrayNilai26 {
 
         int [] nilaiAkhir = new int[10];
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("masukkan nilai akhir ke-"+ 1 +":");
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.println("masukkan nilai akhir ke-"+ i +":");
             nilaiAkhir[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("nilai akhir ke-"+ i + " adalah: " + nilaiAkhir[i]);
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("nilai akhir ke-"+ i + " lulus!");
+    
+            }
+            else {
+                System.out.println("nilai akhir ke-"+ i + " tidak lulus!");
+            }
         }
 
         sc.close();

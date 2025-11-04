@@ -17,7 +17,8 @@
 
 1. program akan error atau tidak bisa dijalankan, karena ada angka yang tidak sesuai dengan variable array tersebut menggunakan int sedangkan angka yang saya ubah bertipe float/double
 2. sudah hasilnya seperti ini : `int bil [] = {5, 13, -7, 17};`
-3. 
+3. outputnya sama for pada program diatas menunjukkan perulangan pada variabel array agar menampikan perulangan sebanyak 3 kali pada array.
+4. program akan error saat mencari array indeks ke 4 karena panjang array hanya sampai 3.
 
 ### 2.2 Percobaan 2: Studi Kasus Nilai Mahasiswa di SIAKAD - Meminta Inputan
 
@@ -31,6 +32,11 @@
 4. Modifikasi program agar menampilkan status kelulusan semua mahasiswa berdasarkan nilai, yaitu dengan menampilkan status mana mahasiswa yang lulus dan tidak lulus, seperti ilustrasi output berikut:
 
 **Jawaban**
+
+1. tidak berubah, hasil outputnya tetap sama, karena kedua program tersebut akan tetap meminta input sebanyak 10 kali
+2. i < nilaiAkhir.length yaitu kondisi ketika nilai i masih kurang dari jumlah elemen array nilaiAkhir, akan terus mengulangi perintah dalam loop
+3. perulangan pada program diatas memeriksa setiap nilai dalam array, jika nilai lebih dari 70 maka akan dianggap lulus
+4. sudah dengan menambahkan else pada if statment.
 
 ### 2.3 Percobaan 3: Studi Kasus Nilai Mahasiswa di SIAKAD - Melakukan Operasi Aritmatika terhadap Elemen Array
 
