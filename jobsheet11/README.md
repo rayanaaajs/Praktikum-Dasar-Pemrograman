@@ -10,27 +10,19 @@
 1. Apakah pengisian elemen array harus dilakukan secara berurutan mulai dari indeks ke-0? Jelaskan!
 2. Mengapa terdapat null pada daftar nama penonton?
 3. Lengkapi daftar penonton pada langkah ke-4 sebagai berikut:
-   penonton[0][0] = "Amin";
-   penonton[0][1] = "Bena";
-   penonton[1][0] = "Candra";
-   penonton[1][1] = "Dela";
-   penonton[2][0] = "Eka";
-   penonton[2][1] = "Farhan";
-   penonton[3][0] = "Gisel";
-   penonton[3][1] = "Hana";
+   `penonton[0][0] = "Amin"; penonton[0][1] = "Bena";penonton[1][0] = "Candra";penonton[1][1] = "Dela";penonton[2][0] = "Eka" penonton[2][1] = "Farhan";,penonton[3][0] = "Gisel"; penonton[3][1] = "Hana";`
 4. Tambahkan kode program sebagai berikut:
-   System.out.println(penonton.length);
-   System.out.println(penonton[0].length);
-   System.out.println(penonton[1].length);
-   System.out.println(penonton[2].length);
-   System.out.println(penonton[3].length);
+   `System.out.println(penonton.length) ;System.out.println(penonton[0].length); System.out.println(penonton[1].length); System.out.println(penonton[2].length); System.out.println(penonton[3].length);`
+   Jelaskan fungsi dari penonton.length dan penonton[0].length!
+   Apakah penonton[0].length, penonton[1].length, penonton[2].length, dan penonton[3].length memiliki nilai yang sama? Mengapa?
+5. Modifikasi kode program pada pertanyaan 4 untuk menampilkan panjang setiap baris pada array menggunakan for loop. Compile, run, lalu amati hasilnya.
 
-**Jawaban**
+   **Jawaban**
 
-1. program akan error atau tidak bisa dijalankan, karena ada angka yang tidak sesuai dengan variable array tersebut menggunakan int sedangkan angka yang saya ubah bertipe float/double
-2. sudah hasilnya seperti ini : `int bil [] = {5, 13, -7, 17};`
-3. outputnya sama for pada program diatas menunjukkan perulangan pada variabel array agar menampikan perulangan sebanyak 3 kali pada array.
-4. program akan error saat mencari array indeks ke 4 karena panjang array hanya sampai 3.
+6. program akan error atau tidak bisa dijalankan, karena ada angka yang tidak sesuai dengan variable array tersebut menggunakan int sedangkan angka yang saya ubah bertipe float/double
+7. sudah hasilnya seperti ini : `int bil [] = {5, 13, -7, 17};`
+8. outputnya sama for pada program diatas menunjukkan perulangan pada variabel array agar menampikan perulangan sebanyak 3 kali pada array.
+9. program akan error saat mencari array indeks ke 4 karena panjang array hanya sampai 3.
 
 ### 2.2 Percobaan 2: Studi Kasus Nilai Mahasiswa di SIAKAD - Meminta Inputan
 
