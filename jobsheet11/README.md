@@ -32,6 +32,13 @@
 
 **Jawaban**
 
+1. tidak, kita bisa mengisi elemen array pada indeks manapun selama masih dalam ukuran array
+2. karena pada baris ketiga dan kolom ke 1 belum diisi dan karena array bertipe string jadi java menjadikan null(belum terdefinsi) sebagai default
+3. sudah
+4. penonton.length menunjukkan jumlah baris pada array, penonton[0].length menunjukkan jumlah kolom pada baris ke-0
+   Ya, semuanya sama, karena setiap baris memiliki jumlah kolom yang sama
+5. x 
+
 ### 2.2 Percobaan 2: Memanfaatkan Scanner dan Perulangan untuk Input dan Output pada Array 2 Dimensi
 
 **Pertanyaan**
@@ -73,5 +80,5 @@
 1. Bagaimana jika terdapat perubahan jumlah siswa dan jumlah mata kuliah? Modifikasi
    kode program SIAKAD untuk mengakomodasi jumlah siswa dan jumlah mata kuliah
    yang dinamis.
-   
+
 **Jawaban**

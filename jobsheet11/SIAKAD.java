@@ -26,7 +26,7 @@ public class SIAKAD {
 
             for (int i = 0; i < 4; i++) {
                 totalPerMatkul += nilai[i][j];
-            }
+            }   
 
             System.out.println("mata kuliah " + (j+1) + ":" + totalPerMatkul/4);
         }
