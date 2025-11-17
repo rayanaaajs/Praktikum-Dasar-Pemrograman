@@ -30,5 +30,6 @@ public class tugas2 {
             total += hargaPesanan[i];
         }
         System.out.println("Total Biaya: Rp"+total);
+        sc.close();
     }
 }

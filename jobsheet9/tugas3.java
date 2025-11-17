@@ -24,5 +24,6 @@ public class tugas3 {
         } else {
             System.out.println("Menu tidak tersedia!");
         }
+        sc.close();
     }
 }

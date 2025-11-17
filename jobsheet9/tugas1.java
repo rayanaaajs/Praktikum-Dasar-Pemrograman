@@ -34,6 +34,7 @@ public class tugas1 {
             System.out.println("Nilai mahasiswa ke-"+(i+1)+" : "+arrNilai[i]);
         }
 
+        sc.close();
     }
-    
+
 }
