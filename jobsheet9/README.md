@@ -61,4 +61,4 @@
 
 1. statement break berfungsi menghentikan proses perulangan setelah nilai yang dicari ditemukan dalam array
 2. sudah dan saya commit dengan nama modifikasi search nilai
-3. 
+3. sudah
