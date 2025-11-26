@@ -72,19 +72,44 @@ public class Kafe26 {
         int pilihanMenu = sc.nextInt();
         System.out.println("masukkan jumlah item");
         int banyakItem = sc.nextInt();
+        sc.nextLine();
+        System.out.println("masukkan kode promo");
+        String kodePromo = sc.nextLine();
 
-        int totalHarga = HitungTotalHarga26(pilihanMenu, banyakItem);
-        System.out.println("Total Harga =" + totalHarga);
+        double[] total = HitungTotalHarga26(pilihanMenu, banyakItem, kodePromo);
+        double totalHarga = total[0];
+        double jumlahDiskon = total[1];
+
+
+        System.out.println("Total Harga = " + totalHarga);
+        System.out.println("jumlah diskon = " +jumlahDiskon );
         
         sc.close();
     }
 
-    public static int HitungTotalHarga26 (int pilihanMenu, int banyakItem ) {
+    public static double[] HitungTotalHarga26 (int pilihanMenu, int banyakItem, String kodePromo ) {
         int [] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
+        
+        double diskon = 0.0;
+        
+        if (kodePromo.equalsIgnoreCase("DISKON50")) {
+            diskon = 0.5;
+        } else if (kodePromo.equalsIgnoreCase("DISKON30")) {
+            diskon = 0.3;
+        }else{
+            System.out.println("kode promo invalid");
+        }
+        
 
-        int hargaTotal = hargaItems [pilihanMenu - 1] * banyakItem;
-        return hargaTotal;
+        double jumlahDiskon = hargaItems [pilihanMenu - 1] * banyakItem * diskon;
 
+        double hargaTotal = hargaItems [pilihanMenu - 1] * banyakItem - jumlahDiskon;
+
+
+
+        return new double[] {hargaTotal, jumlahDiskon};
+        
+            
 
 
     }
