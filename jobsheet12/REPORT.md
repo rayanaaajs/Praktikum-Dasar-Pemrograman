@@ -70,4 +70,5 @@
 
 1. fungsi membutuhkan return saat program harus menghasilkan nilai contoh hitungTotalharga();, fungsi tidak membutuhkan return saat hanya menampilkan output contoh Menu();
 2. tipe data dari 2 parameter yang di kembalikan yaitu integer, pilihanMenu adalah parameter untuk urutan menu yang dipilih, sedangkan jumlahPesanan yaitu jumlah item yang dipesan
-3. 
+3. sudah dan saya commit dengan nama modifikasi kodepromo
+4. sudah dan saya commit dengan nama modifikasi pesanan lebih dari 1  

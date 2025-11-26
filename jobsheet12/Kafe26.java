@@ -68,21 +68,36 @@ public class Kafe26 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("masukkan nomor menu yang ingin anda pesan");
-        int pilihanMenu = sc.nextInt();
-        System.out.println("masukkan jumlah item");
-        int banyakItem = sc.nextInt();
-        sc.nextLine();
-        System.out.println("masukkan kode promo");
-        String kodePromo = sc.nextLine();
+        System.out.println("masukkan berapa jenis menu yang ingin anda pesan");
+        int jenisMenu = sc.nextInt();
 
-        double[] total = HitungTotalHarga26(pilihanMenu, banyakItem, kodePromo);
-        double totalHarga = total[0];
-        double jumlahDiskon = total[1];
+        double totalSemuaPesanan = 0;
+        double totalSemuaDiskon = 0;
+
+        for (int i = 1; i <= jenisMenu; i++) {
+            
+            System.out.println("masukkan nomor menu yang ingin anda pesan");
+            int pilihanMenu = sc.nextInt();
+            System.out.println("masukkan jumlah item");
+            int banyakItem = sc.nextInt();
+            sc.nextLine();
+            System.out.println("masukkan kode promo");
+            String kodePromo = sc.nextLine();
+
+            double[] total = HitungTotalHarga26(pilihanMenu, banyakItem, kodePromo);
+            double totalHarga = total[0];
+            double jumlahDiskon = total[1];
+
+            totalSemuaPesanan += totalHarga;
+            totalSemuaDiskon += jumlahDiskon;
+
+        }
+
+        System.out.println("TOTAL SEMUA PESANAN = " + totalSemuaPesanan);
+        System.out.println("TOTAL DISKON = " + totalSemuaDiskon);
 
 
-        System.out.println("Total Harga = " + totalHarga);
-        System.out.println("jumlah diskon = " +jumlahDiskon );
+        
         
         sc.close();
     }
