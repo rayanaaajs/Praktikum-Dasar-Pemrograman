@@ -71,4 +71,29 @@
 1. fungsi membutuhkan return saat program harus menghasilkan nilai contoh hitungTotalharga();, fungsi tidak membutuhkan return saat hanya menampilkan output contoh Menu();
 2. tipe data dari 2 parameter yang di kembalikan yaitu integer, pilihanMenu adalah parameter untuk urutan menu yang dipilih, sedangkan jumlahPesanan yaitu jumlah item yang dipesan
 3. sudah dan saya commit dengan nama modifikasi kodepromo
-4. sudah dan saya commit dengan nama modifikasi pesanan lebih dari 1  
+4. sudah dan saya commit dengan nama modifikasi pesanan lebih dari 1
+
+### 2.4 Percobaan 4: Fungsi Varargs
+
+
+**Pertanyaan**
+
+1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String...
+   namaPengunjung!
+2. Modifikasi method daftarPengunjung menggunakan for-each loop.
+3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban
+   Anda berdasarkan aturan varargs di Java, dan berikan contohnya!
+4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen.
+   Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan?
+   Jika tetap berjalan, bagaimana output yang dihasilkan?
+
+**Jawaban**
+
+1. agar fungsi dapat menerima jumlah argumen yang tidak terbatas, tanpa harus membuat array secara manual
+2. sudah
+3. Tidak bisa. Java hanya mengizinkan satu varargs, dan harus di posisi terakhir. `void contoh(int a, String b, double... data)`
+4. Program tetap berjalan, varargs menjadi array kosong tidak memunculkan nama apa pun karena varargs tanpa argumen berarti membuat array kosong
+
+### 2.5 Percobaan 5: Pembuatan Kode Program, dengan Fungsi versus Tanpa Fungsi
+
+**pertanyaan**
