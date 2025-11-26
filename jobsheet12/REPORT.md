@@ -19,6 +19,8 @@
 3. Kode lebih rapi, lebih mudah dibaca, dan jika ingin mengubah menu cukup ubah di satu tempat.
 4. Program mulai → masuk ke main → main memanggil Menu() → masuk ke fungsi Menu() → menu ditampilkan → kembali ke main.
 
+### 2.2 Percobaan 2: Membuat Fungsi Dengan Parameter
+
 **Pertanyaan**
 
 1. Apakah kegunaan parameter di dalam fungsi?
@@ -38,4 +40,34 @@
 4. Jika true tampilkan info member atau diskon; jika false tidak ada diskon.
 5. Error, karena fungsi membutuhkan parameter wajib.
 6. ![image] (image/Kafe26.java.png).
+7. `menu("Budi", true, "DISKON30");`
+8. iya, karena penggunaan parameter itu seperti menstubtitusikan nilai dengan cara mengganti nilai placeholder dengan nilai sebenarnya
 
+### 2.3 Percobaan 3: Membuat Fungsi dengan Nilai Kembalian
+
+**pertanyaan**
+
+1. Jelaskan secara singkat kapan suatu fungsi membutuhkan nilai kembalian (return
+   value) dan kapan fungsi tidak perlu mengembalikan nilai. Berikan minimal satu contoh
+   dari program kafe pada Percobaan 3 untuk masing-masing kasus.
+2. Fungsi hitungTotalHargaNoAbsen saat ini mengembalikan total harga berdasarkan
+   pilihanMenu dan jumlahPesanan. Sebutkan tipe data nilai kembalian dan dua
+   buah parameter yang digunakan fungsi tersebut. Jelaskan arti masing-masing
+   parameter dalam konteks program kafe.
+3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima
+   kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari
+   totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka
+   mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode
+   promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga
+   totalHarga.
+4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta
+   menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga
+   pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3
+   sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis
+   menu)?
+
+**jawaban**
+
+1. fungsi membutuhkan return saat program harus menghasilkan nilai contoh hitungTotalharga();, fungsi tidak membutuhkan return saat hanya menampilkan output contoh Menu();
+2. tipe data dari 2 parameter yang di kembalikan yaitu integer, pilihanMenu adalah parameter untuk urutan menu yang dipilih, sedangkan jumlahPesanan yaitu jumlah item yang dipesan
+3. 
