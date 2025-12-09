@@ -11,6 +11,7 @@ public class percobaan2 {
 
         System.out.println(hitungPangkat(bilangan, pangkat));
 
+        sc.close();
     }
 
     static int hitungPangkat (int x, int y) {

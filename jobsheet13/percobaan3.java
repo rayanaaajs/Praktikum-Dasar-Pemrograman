@@ -11,7 +11,7 @@ public class percobaan3 {
 
        System.out.println("jumlah saldo setelah" + tahun + "tahun");
        System.out.println(hitungLaba(saldoAwal, tahun));
-
+        sc.close();
     }
 
     static double hitungLaba(double saldo, int tahun ) {
