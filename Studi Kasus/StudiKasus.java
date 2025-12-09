@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class StudiKasus {
     // Baris = Jumlah Mahasiswa, Kolom = data (Nama, NIM, Prodi, Perusahaan, Semester, Status)
-    static String[][] dataMagang = new String[1000][6]; 
+    static String[][] dataMagang = new String[100][6]; 
     static int jumlahData = 0; // untuk menghitung berapa data yang sudah terisi
     static Scanner sc = new Scanner(System.in);
 
@@ -68,18 +68,18 @@ public class StudiKasus {
         System.out.print("Perusahaan Tujuan Magang: ");
         dataMagang[jumlahData][3] = sc.nextLine();
 
-        String semesterInput;
+        int semesterInput;
         boolean validasiSemester = false;
         do {
             System.out.print("Semester pengambilan magang (6 atau 7): ");
-            semesterInput = sc.nextLine();
-            if (semesterInput.equals("6")|| semesterInput.equals("7")) {
+            semesterInput = sc.nextInt();
+            if (semesterInput == 6 || semesterInput == 7) {
                 validasiSemester = true;
-                dataMagang[jumlahData][4] = semesterInput;
+                dataMagang[jumlahData][4] = String.valueOf(semesterInput);//mengubah int ke string
             } else {
                 System.out.println("Input salah! Semester hanya boleh 6 atau 7.");
             }
-        } while (!validasiSemester);
+        } while (validasiSemester == false);
 
         
         String statusInput;
@@ -97,7 +97,7 @@ public class StudiKasus {
             } else {
                 System.out.println("Input salah! Status harus 'Diterima', 'Menunggu', atau 'Ditolak'.");
             }
-        } while (!validasiStatus);
+        } while (validasiStatus == false);
 
         jumlahData++; 
         System.out.println("Data pendaftaran magang berhasil ditambahkan. Total pendaftar: " + jumlahData);
@@ -134,10 +134,13 @@ public class StudiKasus {
         System.out.print("Masukkan Program Studi: ");
         String kataKunci = sc.nextLine();
         
-        boolean ditemukan = false;
+        
+
         System.out.printf("%-4s %-20s %-15s %-25s %-20s %-15s %-10s\n"
                         , "No", "Nama", "NIM", "Prodi", "Perusahaan","Semester",  "Status");
         System.out.println("==============================================================================================================");
+
+        boolean ditemukan = false;
 
         for (int i = 0; i < jumlahData; i++) {
             if (dataMagang[i][2].equalsIgnoreCase(kataKunci)) {
@@ -147,7 +150,7 @@ public class StudiKasus {
             }
         }
 
-        if (!ditemukan) {
+        if (ditemukan == false) {
             System.out.println("Data dengan Program Studi '" + kataKunci + "' tidak ditemukan.");
         }
     }
